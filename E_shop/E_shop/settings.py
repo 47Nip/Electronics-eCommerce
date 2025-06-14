@@ -139,8 +139,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-RAZORPAY_KEY_ID = 'rzp_test_dFzVBmDSaT2EMA'
-RAZORPAY_KEY_SECRET = 'qjBQDgGGlkn4GSr9u2zNejwn'
+RAZORPAY_KEY_ID = "your razorpay key "
+RAZORPAY_KEY_SECRET = "your razorapy secret key "
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
