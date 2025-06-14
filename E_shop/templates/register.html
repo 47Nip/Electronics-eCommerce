@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+ <!-- login area start -->
+        <div class="login-register-area pt-100px pb-100px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-12 ml-auto mr-auto">
+                        <div class="login-register-wrapper">
+                            <div class="login-register-tab-list nav">
+                                <a  href="{% url 'login' %}">
+                                    <h4>login</h4>
+                                </a>
+                                <a  href="{% url 'register' %}">
+                                    <h4>register</h4>
+                                </a>
+                            </div>
+
+                            
+
+                                <div id="lg2" class="tab-pane">
+                                    <div class="login-form-container">
+                                        <div class="login-register-form">
+                                            <form action="" method="post">
+                                                {% csrf_token %}
+                                                {% if error %}
+                                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                                    {{ error }}
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                                </div>
+                                                {% endif %}
+                                                {% if success %}
+                                                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                                    {{ success }}
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                                </div>
+                                                {% endif %}
+                                                <input type="text" name="username" placeholder="Username" />
+                                                <input type="text" name="FirstName" placeholder="FirstName" />
+                                                <input type="text" name="lastName" placeholder="LastName" />
+                                                <input name="email" placeholder="Email" type="email" />
+                                                <input type="password" name="password" placeholder="Password" />
+                                                <input type="password" name="password2" placeholder="Confirm Password" />
+                                                <div class="button-box">
+                                                    <button type="submit"><span>Register</span></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- login area end -->
+{% endblock %}
