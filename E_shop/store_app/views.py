@@ -118,7 +118,7 @@ def CONTACT_PAGE(request):
         email_from = settings.EMAIL_HOST_USER
         
         try:
-            send_mail(subject, message, email_from, ['nippatel37@gmail.com'])
+            send_mail(subject, message, email_from, ['your email id'])
             contact.save()
             return redirect('home')
         except Exception as e:
