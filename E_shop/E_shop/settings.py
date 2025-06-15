@@ -145,5 +145,5 @@ RAZORPAY_KEY_SECRET = "your razorapy secret key "
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'nippatel37@gmail.com'
-EMAIL_HOST_PASSWORD = 'tfac zfzl jqxu rvco'
+EMAIL_HOST_USER = 'your email id '
+EMAIL_HOST_PASSWORD = 'your app code generateed from gmail account '
